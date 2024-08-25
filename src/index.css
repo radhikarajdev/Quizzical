@@ -3,11 +3,147 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-image: url('/Users/radhikarajdev/quizzical/src/images/intro-page.png');
+  object-fit: cover;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.start-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  color: #293264;
+  margin-top: -20px;
+}
+.start-container h1{
+  margin: 0;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.start-container button{
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #4D5B9E;
+  color: #F5F7FB;
+  border: none;
+}
+.form-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #293264;
+  margin: 2rem 3rem;
+}
+.radio{
+  display: none;
+}
+.label{
+  padding: 5px 10px;
+  margin: 1rem;
+  border: solid #293264;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.correct{
+  padding: 5px 10px;
+  margin: 1rem;
+  color: #293264;
+  background-color: black;
+  background-color: #94D7A2 !important;
+  border: solid #94D7A2 !important;
+  border-radius: 10px;
+}
+.incorrect{
+  padding: 5px 10px;
+  margin: 1rem;
+  color: rgb(160, 155, 155);
+  background-color: #F8BCBC !important;
+  border: solid #F8BCBC !important;
+  border-radius: 10px;
+}
+.others{
+  padding: 5px 10px;
+  margin: 1rem;
+  background-color: none !important;
+  color: rgb(175, 174, 174) !important;
+  border: solid rgb(175, 174, 174)  !important;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.label:hover{
+  background-color: #D6DBF5;
+  border-color: #D6DBF5;
+}
+input[type="radio"]:checked + label {
+  background-color: #D6DBF5;
+  border-color: #D6DBF5;
+}
+.all-inputs{
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+.ques{
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+button{
+  width: 130px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #4D5B9E;
+  color: #F5F7FB;
+  border: none;
+}
+.buttons{
+  text-align: center;
+}
+hr{
+  color: #DBDEF0;
+}
+.buttons h3{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  margin-top: -1rem;
+  color: #293264;
+}
+.not-found h1 {
+  margin: 0;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.not-found h3{
+  color: #4D5B9E;
+}
+.home-button{
+  width: 90px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #4D5B9E;
+  color: #F5F7FB;
+  border: none;
 }
